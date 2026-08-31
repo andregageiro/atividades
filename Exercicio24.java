@@ -4,20 +4,33 @@ public class Exercicio24 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int numero;
-        int contadorPares = 0;
+        int numero, soma;
+        soma = 0;
+        numero = 1;
 
-        for (int i = 1; i <= 10; i++) {
-            System.out.print("Digite o " + i + "º número: ");
+        while (numero != 0) {
+            System.out.println("digite um numero");
             numero = scan.nextInt();
-
-            if (numero % 2 == 0) {
-                contadorPares++;
-            }
+            soma = soma + numero;
         }
+        System.out.println("a soma dos numeros é " + soma);
 
-        System.out.println("Quantidade de números pares: " + contadorPares);
 
-        scan.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

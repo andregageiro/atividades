@@ -2,18 +2,24 @@ import java.util.Scanner;
 
 public class Exercicio21 {
     public static void main(String[] args) {
-        int numero, contador;
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("digite um numero");
-        numero = scan.nextInt();
+        double nota;
+        int contador;
 
-        for (contador = 1; contador <=10; contador++ ) {
-            System.out.println(numero + " x " + contador + " = " + contador * numero);
+        contador = 0;
+
+        for (int i = 1; i <=6; i++) {
+            System.out.println("digite uma nota");
+            nota = scan.nextDouble();
+
+
+            if (nota >= 8) {
+                contador = contador + 1;
+                System.out.println("quantidade de notas altas " + contador);
+
+            }
         }
-
-
-
 
 
 

@@ -2,16 +2,31 @@ import java.util.Scanner;
 
 public class Exercicio6 {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
-        double nota1, nota2, media;
-        Scanner leia = new Scanner(System.in);
-        System.out.println("digite a primeira nota ");
-        nota1 = leia.nextDouble();
-        System.out.println("digite a segunda nota ");
-        nota2 = leia.nextDouble();
+        int[] A = {7, 21, 15, 12, 82};
+        int numero;
+        System.out.println("digite um numero");
+        numero = scan.nextInt();
+        boolean encontrado = false;
 
-        media = (nota1 + nota2) / 2;
+        for (int i = 0; i < A.length; i++){
+            if (A[i] == numero){
+                System.out.println("elemento encontrado");
+                encontrado = true;
+                break;
 
-        System.out.println("sua media final é " + media);
+
+            }
+        }
+        if (!encontrado){
+            System.out.println("elemento nao encontrado");
+
+        }
+        scan.close();
+
+
+
+
     }
 }

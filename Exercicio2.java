@@ -2,19 +2,17 @@ import java.util.Scanner;
 
 public class Exercicio2 {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int[]posicao = new int [4];
 
-        int n1 , n2, soma;
-        Scanner leia = new Scanner(System.in);
+        for (int i =  0; i< 4; i++){
+            System.out.println("informe um numero");
+            posicao [i] = scan.nextInt();
 
-        System.out.println("digite o primeiro numero");
-        n1 = leia.nextInt();
-
-        System.out.println("soma dos numeros é");
-        n2 = leia.nextInt();
-
-        soma = n1 + n2;
-
-        System.out.println("resultado " + soma);
+        }
+        for (int i = 0; i< 4; i++){
+            System.out.print( posicao [i] +", ");
+        }
 
 
 

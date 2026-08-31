@@ -1,20 +1,17 @@
 import java.util.Scanner;
 
-     public class Exercicio4 {
+public class Exercicio4 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int[]posicao = new int [5];
+        for (int i =  0; i< 5; i++){
+            System.out.println("informe um numero");
+            posicao [i] = scan.nextInt();
 
-     public static void main(String[] args) {
-
-    Scanner leia = new Scanner(System.in);
-
-    int numero ,dobro, triplo;
-    System.out.println("digite um numero");
-    numero = leia.nextInt();
-
-    dobro = numero * 2;
-    triplo = numero * 3;
-
-    System.out.println("o dobro é " + dobro);
-    System.out.println("o triplo é " + triplo);
+        }
+        for (int i = 0; i< 5; i++){
+            System.out.print( posicao [i]*3 +", ");
+        }
 
 
 

@@ -2,20 +2,27 @@ import java.util.Scanner;
 
 public class Exercicio22 {
     public static void main(String[] args) {
+        double numero, soma;
         Scanner scan = new Scanner(System.in);
-        int numero, contador;
-        ;
 
-        System.out.println("digite um numero inteiro positivo");
-        numero = scan.nextInt();
-
-        contador = 0;
-
-        for (int i = 1; i <= numero; i++) {
-            contador= contador+1;
-            System.out.println(contador);
+        soma = 0;
+        for (double i = 1; i <=6; i++){
+            System.out.println("digite um numero ");
+            numero = scan.nextDouble();
+            if (numero > 0)
+                soma = soma + numero;
 
         }
+        System.out.println("a soma dos numeros positivo é " + soma);
+
+
+
+
+
+
+
+
+
 
 
 
